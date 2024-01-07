@@ -323,6 +323,7 @@ body{
     flex-wrap: wrap;
     padding: 2em 1em;
     text-align: center;
+    background-color: var(--color-dimgray);
     
   }
   .column {
@@ -339,16 +340,16 @@ body{
     box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
     margin-top: 30px;
     border-radius: 0.6em;
-    color: #1f003b;
+    color: #fff;
     cursor: pointer;
     transition: 0.3s;
-    background-color: #ffffff;
+    background-color: #2f2721;
   
   }
   .card .img-container {
     width: 8em;
     height: 8em;
-    background-color: #a993ff;
+    background-color: #9d7e57;
     padding: 0.5em;
     border-radius: 50%;
     margin: 0 auto 2em auto;
@@ -385,6 +386,58 @@ body{
   .card:hover .img-container {
     transform: scale(1.15);
   }
+/* footer */
+
+.footer{
+    background: var(--main-color);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    margin-top: 30px;
+} 
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #ccc;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .link{
+    font-size: 1.7rem;
+    line-height: 2;
+    color: var(--primary-color);
+    padding: .5rem 0;
+    display: block;
+}
+
+.footer .box-container .box .link:hover{
+    color: #ffaa42;
+    text-decoration: underline;
+}
+
+.footer .credit{
+    color: #fff;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    border-top: 0.1rem solid var(--primary-color);
+}
+
+.footer .credit span{
+    color: var(--primary-color);
+}
 
 /* our team end */
 
